@@ -26,7 +26,6 @@ export class PersonAddComponent implements OnInit {
       phone: new FormControl({value: '', disabled: this.disabledForms}, 
       [Validators.required]),
     });
-    console.log(this.personForm.value);
   }
 
   public mask = ['(', /[1-9]/, /[1-9]/, /[1-9]/, ')', ' ', /[1-9]/, /[1-9]/, /[1-9]/, '-', /[1-9]/, /[1-9]/, '-', /[1-9]/, /[1-9]/];
