@@ -8,7 +8,8 @@ import { FirstComponent } from './first/first.component';
 import { SecondComponent } from './second/second.component';
 import { PersonViewComponent } from './person-view/person-view.component';
 import { PersonAddComponent } from './person-add/person-add.component';
-import { FilterPhonePipe } from './pipes/filter-phone.pipe';
+import { FilterFirstNamePipe } from './pipes/filter-first-name.pipe';
+import { FilterLastNamePipe } from './pipes/filter-last-name.pipe';
 
 
 @NgModule({
@@ -18,7 +19,8 @@ import { FilterPhonePipe } from './pipes/filter-phone.pipe';
     SecondComponent,
     PersonViewComponent,
     PersonAddComponent,
-    FilterPhonePipe,
+    FilterFirstNamePipe,
+    FilterLastNamePipe,
   ],
   imports: [
     BrowserModule,

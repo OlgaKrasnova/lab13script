@@ -8,21 +8,23 @@ import { Person } from './shared/models/person.model';
 })
 
 export class AppComponent implements OnInit, OnDestroy {
-  title = 'Компоненты';
-  
+  title = 'Персонажи';
+  firstname_filter: boolean;
+  search_firstname = "";
+  search_lastname = "";
+  lastname_filter: boolean;
   persons: Person[] = [];
   
   constructor() {
 
   }
-  
-  searchStr = '';
 
   ngOnInit(): void {
-    this.persons.push(new Person('Ivan', 'Ivanov', '(977) 182-73-29', 1));
-    this.persons.push(new Person('Ivan', 'Ivanov', '(977) 182-73-29', 2));
-    this.persons.push(new Person('Ivan', 'Ivanov', '(977) 182-73-29', 3));
-    this.persons.push(new Person('Ivan', 'Ivanov', '(977) 182-73-29', 4));
+    this.persons.push(new Person('Olga', 'Krasnova', '(977) 182-73-29', 1));
+    this.persons.push(new Person('Dashylya', 'Belyava', '(977) 182-73-29', 2));
+    this.persons.push(new Person('Nastasya', 'Malkina', '(977) 182-73-29', 3));
+    this.persons.push(new Person('Elena', 'Bychkova', '(977) 182-73-29', 4));
+    this.persons.push(new Person('Feodor', 'Gusev', '(977) 182-73-29', 5));
   }
 
   ngOnDestroy(): void {
